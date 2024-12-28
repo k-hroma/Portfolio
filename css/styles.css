@@ -1,0 +1,158 @@
+:root {
+  /*Fonts Sizes*/
+  --small-font-size: 1rem;
+  --medium-font-size: 1.25rem;
+  --large-font-size: 20.625rem;
+
+  /*Fonts Weights*/
+  --regular-weight: 300;
+  --medium-weight: 500;
+
+  /*Colors*/
+  --Yellow: hsl(69, 100%, 50%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", serif;
+  font-size: var(--medium-font-size);
+  font-weight: var(--regular-weight);
+  letter-spacing: -2%;
+  line-height: 1.2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  padding: 1rem 1.875rem;
+  background-color: black;
+}
+
+/*Header*/
+header {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.header-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header-txt {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.nav-container-sup {
+  position: fixed;
+  top: .5rem;
+  z-index: 1000;
+  width: 95%;
+}
+
+.nav-container-inf {
+  position: fixed;
+  bottom: .5rem;
+  z-index: 1000;
+  width: 95%;
+}
+
+.nav-container-sup ul {
+  list-style: none;
+}
+
+.nav-container-inf ul {
+  list-style: none;
+}
+
+.arrow li ::before {
+  content: "* ";
+}
+
+.nav-container-sup a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.3;
+  font-size: var(--small-font-size);
+}
+
+.nav-container-inf a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.3;
+  font-size: var(--small-font-size);
+}
+
+.nav-container-sup a:hover {
+  color: var(--Yellow);
+  text-decoration: underline;
+  font-weight: var(--medium-weight);
+}
+
+.nav-container-inf a:hover {
+  color: var(--Yellow);
+  text-decoration: underline;
+  font-weight: var(--medium-weight);
+}
+
+.nav-sup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-inf {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  gap: 4.75rem;
+  padding: 0;
+}
+
+.not-arrow {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  min-width: 65px;
+}
+
+.kroma {
+  font-weight: var(--medium-weight);
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50%;
+  padding-top: 5.9375rem;
+}
+
+.scroll-container {
+  display: flex;
+
+  width: 90%;
+}
+
+.scroll-container p {
+  font-size: var(--large-font-size);
+  letter-spacing: -26.4px;
+}
+
+main {}
