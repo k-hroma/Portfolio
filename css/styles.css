@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   place-content: center;
-  padding: 1rem 1.875rem;
+  padding: 1rem 0;
   background-color: black;
 }
 
@@ -39,6 +39,7 @@ header {
   display: flex;
   flex-direction: column;
   place-content: center;
+  padding: 0 1.875rem;
 }
 
 .header-gif {
@@ -161,17 +162,6 @@ header {
   width: 100%;
 }
 
-.custom-line {
-  color: white;
-  background-color: white;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-
-}
-
 /*Main*/
 
 main {
@@ -182,6 +172,8 @@ main {
 .title-section {
   font-size: var(--small-font-size);
   font-weight: var(--regular-weight);
+  margin-top: 3rem;
+  padding: 0 1.875rem;
 }
 
 .title-project {
@@ -190,20 +182,46 @@ main {
   margin-bottom: 1.5rem;
 }
 
+/*Separatores*/
+
 .section-separator {
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section-separator-programming {
+  background-color: #383838;
+  padding-bottom: 1.5rem;
+}
+
+.section-separator-programming hr {
+  margin: 0;
+}
+
+.section-separator-experimental hr {
+  margin: 0;
+}
+
+
+.custom-line {
+  background-color: white;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 3rem;
 }
 
 /*Audiovisual Projects Section*/
 
-.audiovisual-content {
+.audiovisual-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 0 1.875rem;
 }
 
-.project-convergencias {
+.project-flowers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,14 +237,15 @@ main {
   width: 100%;
 }
 
-.txt-img {
+.txt-img-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  gap: 1.5rem
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.txt-project-content {
+.txt-content {
   grid-column: 1;
   grid-row: 1 / 2;
   width: 100%;
@@ -261,4 +280,74 @@ main {
 
 .img-content-3 img {
   width: 100%;
+}
+
+/*Programming Section*/
+
+.programming-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #383838;
+  padding-bottom: 2.875rem;
+}
+
+.programming-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 1.875rem;
+}
+
+.work-1 {
+  grid-column: 1 / 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-code-1 {
+  width: 100%;
+}
+
+.img-code-1 img {
+  width: 100%
+}
+
+.txt-container {
+  margin-top: 1.5rem;
+}
+
+.project-description {
+  padding-right: 3rem;
+}
+
+.btn-container button {
+  padding: 0.375rem 0.75rem;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-radius: 30px;
+  margin-right: 1rem;
+}
+
+.btn-container button:hover {
+  color: var(--Yellow);
+  border-color: var(--Yellow);
+}
+
+.btn-container button a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-container button:hover {
+  color: var(--Yellow);
+  border-color: var(--Yellow);
+}
+
+.btn-container button a:hover {
+  color: var(--Yellow);
 }
