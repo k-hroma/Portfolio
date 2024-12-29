@@ -2,6 +2,7 @@
   /*Fonts Sizes*/
   --small-font-size: 1rem;
   --medium-font-size: 1.25rem;
+  --mlarge-font-size: 3rem;
   --large-font-size: 20.625rem;
 
   /*Fonts Weights*/
@@ -53,9 +54,10 @@ header {
 }
 
 .header-txt {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
-
 }
 
 .nav-container-sup {
@@ -147,16 +149,47 @@ header {
   padding-top: 5.9375rem;
 }
 
-.scroll-container {
-  display: flex;
-
-  width: 90%;
-}
-
 .scroll-container p {
   font-size: var(--large-font-size);
   letter-spacing: -26.4px;
 }
+
+.scroll-container {
+  position: relative;
+}
+
+.scroll-word,
+.scroll-word-hidden {
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.scroll-word-hidden {
+  visibility: hidden;
+  /* Inicialmente oculta */
+  opacity: 0;
+  /* Inicialmente invisible */
+  position: absolute;
+  /* Posicionada de manera absoluta respecto al contenedor */
+  top: 0;
+  left: 0;
+}
+
+.scroll-word:hover {
+  opacity: 0;
+  /* Desaparece cuando el cursor está sobre él */
+}
+
+.scroll-word:hover+.scroll-word-hidden {
+  visibility: visible;
+  /* Muestra el texto oculto */
+  opacity: 1;
+  /* Hace el texto visible */
+}
+
+
+
 
 .custom-line {
   width: 100%;
@@ -197,10 +230,13 @@ main {
   margin: 0;
 }
 
+.section-separator-experimental {
+  padding-bottom: 1.5rem;
+}
+
 .section-separator-experimental hr {
   margin: 0;
 }
-
 
 .custom-line {
   background-color: white;
@@ -351,3 +387,139 @@ main {
 .btn-container button a:hover {
   color: var(--Yellow);
 }
+
+/*Experimental Section*/
+
+.experimental-container {
+  padding: 0 1.875rem;
+}
+
+/*Contact Section*/
+.contact-container {
+  padding: 3rem;
+  padding-top: 1.875rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../assets/video/contact_gif.gif);
+}
+
+.txt-contact {
+  width: 100%;
+  max-width: 17.625rem;
+}
+
+.txt-contact p {
+  font-size: var(--mlarge-font-size);
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.form-contact {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.form-contact-f {
+  font-family: "Space Grotesk", serif;
+  font-size: var(--small-font-size);
+}
+
+/* Campos de entrada: Nombre, Apellido, Teléfono y Correo */
+.form-contact-f input.form-control {
+  background-color: transparent;
+  /* Fondo transparente */
+  border: none;
+  /* Sin bordes predeterminados */
+  border-bottom: 1px solid white;
+  /* Solo borde inferior blanco */
+  color: white;
+  /* Texto blanco */
+  border-radius: 0;
+  /* Sin esquinas redondeadas */
+  padding: 5px;
+  /* Espaciado interno */
+  transition: border-color 0.3s, color 0.3s;
+  /* Transiciones suaves */
+}
+
+/* Placeholder para los campos de entrada */
+.form-contact-f input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  /* Placeholder blanco translúcido */
+  font-style: italic;
+  /* Estilo cursivo */
+}
+
+/* Efectos de foco en los campos */
+.form-contact-f input.form-control:focus {
+  box-shadow: none;
+  /* Elimina el contorno azul predeterminado */
+  border-bottom: 1px solid
+    /* Cambia a borde amarillo al enfocar */
+}
+
+/* Campo de texto: Mensaje */
+.form-contact-f textarea.form-control {
+  background-color: transparent;
+  /* Fondo transparente */
+  border: 1px solid white;
+  /* Bordes blancos */
+  color: white;
+  /* Texto blanco */
+  border-radius: 5px;
+  /* Esquinas ligeramente redondeadas */
+  padding: 10px;
+  /* Espaciado interno */
+  transition: border-color 0.3s, color 0.3s;
+  /* Transiciones suaves */
+}
+
+/* Placeholder para el campo de texto */
+.form-contact-f textarea.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  /* Placeholder blanco translúcido */
+  font-style: italic;
+  /* Estilo cursivo */
+}
+
+/* Efectos de foco en el campo de texto */
+.form-contact-f textarea.form-control:focus {
+  box-shadow: none;
+  /* Elimina el contorno azul predeterminado */
+
+}
+
+/* Botón */
+.form-contact-f button.btn {
+  font-family: "Space Grotesk", serif;
+  background-color: transparent;
+  /* Fondo transparente */
+  color: white;
+  /* Texto blanco */
+  border: 1px solid white;
+  /* Bordes blancos */
+  border-radius: 30px;
+  /* Esquinas redondeadas */
+  padding: 5px 15px;
+  /* Espaciado interno */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  /* Transiciones suaves */
+}
+
+/* Hover en el botón */
+.form-contact-f button.btn:hover {
+  color: var(--Yellow);
+  /* Texto amarillo */
+  border-color: var(--Yellow);
+  /* Bordes amarillos */
+  background-color: transparent;
+}
+
+/*Footer Section*/
+
+
+/*Media Query Mobile Design*/
+
+@media screen and (max-width: 880px) {}

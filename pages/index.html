@@ -23,52 +23,53 @@
     <div class="img-container">
       <img class="header-gif" src="../assets/video/header_gif.gif" alt="header_gif">
     </div>
+    <div class="nav-container-sup">
+      <nav class="nav-sup">
+        <div class="not-menu">
+          <ul class="not-arrow">
+            <li><a class="kroma" href="#">K-hroma</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="arrow">
+            <li><a href="#Audiovisual-work">Audiovisual Projects</a></li>
+            <li><a href="#Programming-work">Programming</a></li>
+            <li><a href="#Experimental-work">Experimental</a></li>
+            <li><a href="#About">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="header-txt">
-      <div class="nav-container-sup">
-        <nav class="nav-sup">
-          <div class="not-menu">
-            <ul class="not-arrow">
-              <li><a class="kroma" href="#">K-hroma</a></li>
-            </ul>
-          </div>
-          <div class="menu">
-            <ul class="arrow">
-              <li><a href="#Audiovisual-work">Audiovisual Projects</a></li>
-              <li><a href="#Programming-work">Programming</a></li>
-              <li><a href="#Experimental-work">Experimental</a></li>
-              <li><a href="#About">About</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
       <div class="bio-container">
         <p>Hi! I’m Rocio Mendonça Gainza aka “K-hroma”.</p>
         <p>I’m a developer since January of 2024. I also have a background in audiovisual and sound art, photography
           and
-          social communication. My main focus at this moment is learning as much as I can on coding and programming.</p>
+          social communication. My main focus at this moment is learning as much as I can on coding and programming.
+        </p>
         <p>Please check out my work as you scroll down ↓  </p>
       </div>
       <div class="scroll-container">
-        <p>*scroll</p>
-      </div>
-      <div class="nav-container-inf">
-        <nav class="nav-inf">
-          <div class="not-menu">
-            <ul class="arrow">
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="menu">
-            <ul class="arrow">
-              <li><a href="#">IG</a></li>
-              <li><a href="#">GitHub</a></li>
-            </ul>
-          </div>
-        </nav>
+        <p class="scroll-word">(*ᴗ͈ ˬᴗ͈ )</p>
+        <p class="scroll-word-hidden">(⎚-⎚)</p>
       </div>
     </div>
+    <div class="nav-container-inf">
+      <nav class="nav-inf">
+        <div class="not-menu">
+          <ul class="arrow">
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="arrow">
+            <li><a href="#">IG</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-
   <main>
     <div class="section-separator">
       <hr class="custom-line" id="Audiovisual-work">
@@ -209,13 +210,100 @@
       <hr class="custom-line" id="Experimental-work">
       <h1 class="title-section">Experimental</h1>
     </div>
-    <section class="experimental-work"></section>
-    <div class="section-separator">
+    <section class="experimental-container">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/img/experimental/01.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/experimental/03.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/experimental/07.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/experimental/09.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/experimental/10.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/experimental/12.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/experimental/14.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <div class="section-separator-about">
       <hr class="custom-line" id="About">
       <h1 class="title-section">About</h1>
     </div>
-    <section class="about-section"></section>
+    <section class="about-container">
+      <div>
 
+      </div>
+    </section>
+    <div class="section-separator-contact">
+      <hr class="custom-line" id="Contact">
+      <h1 class="title-section"></h1>
+    </div>
+    <section class="contact-container">
+      <div class="txt-contact">
+        <p>Hey,</p>
+        <p>contact me so we can work together</p>
+      </div>
+      <div class="form-contact">
+        <div class="container mt-4">
+          <form class="form-contact-f">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="surname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="surname" placeholder="Enter your surname" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="telephone" class="form-label">Telephone</label>
+                <input type="tel" class="form-control" id="telephone" placeholder="Enter your telephone" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-12">
+                <label for="message" class="form-label">Write to me</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-start">
+                <button type="submit" class="btn">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer>
   </footer>
