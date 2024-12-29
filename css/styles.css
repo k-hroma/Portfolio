@@ -36,6 +36,7 @@ body {
 }
 
 /*Header*/
+
 header {
   display: flex;
   flex-direction: column;
@@ -188,9 +189,6 @@ header {
   /* Hace el texto visible */
 }
 
-
-
-
 .custom-line {
   width: 100%;
 }
@@ -236,6 +234,10 @@ main {
 
 .section-separator-experimental hr {
   margin: 0;
+}
+
+.section-separator-about {
+  padding-bottom: 1.5rem;
 }
 
 .custom-line {
@@ -394,9 +396,105 @@ main {
   padding: 0 1.875rem;
 }
 
+/*About Section*/
+.about-container {
+  padding: 0 1.875rem;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 1.5rem;
+}
+
+.grid-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio-content {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+  width: 100%;
+  max-width: 287px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-content p {
+  margin: 0;
+}
+
+.name-about {
+  font-size: var(--mlarge-font-size);
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.info-about {
+  font-size: var(--small-font-size);
+  margin-top: 1rem;
+}
+
+.icons-bar {
+  margin-top: 1rem;
+}
+
+.icons-bar p {
+  margin-bottom: 2px;
+}
+
+.icon-content {
+  display: flex;
+  gap: 8px
+}
+
+.icon-content a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-content a:hover {
+  transform: scale(1.2);
+  color: var(--Yellow)
+}
+
+.certificates-content {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+
+}
+
+.tools-content {
+  grid-column: 3 / 4;
+}
+
+.workshops-content {
+  grid-column: 4 / 5;
+  grid-row: span 2;
+
+}
+
+.about-container h3 {
+  font-size: var(--medium-font-size);
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+}
+
+.about-container li {
+  font-size: var(--small-font-size);
+  margin-bottom: 1.5rem;
+
+}
+
 /*Contact Section*/
 .contact-container {
-  padding: 3rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   padding-top: 1.875rem;
   padding-bottom: 10rem;
   display: flex;
@@ -426,98 +524,77 @@ main {
   font-size: var(--small-font-size);
 }
 
-/* Campos de entrada: Nombre, Apellido, Teléfono y Correo */
 .form-contact-f input.form-control {
   background-color: transparent;
-  /* Fondo transparente */
   border: none;
-  /* Sin bordes predeterminados */
   border-bottom: 1px solid white;
-  /* Solo borde inferior blanco */
   color: white;
-  /* Texto blanco */
   border-radius: 0;
-  /* Sin esquinas redondeadas */
   padding: 5px;
-  /* Espaciado interno */
   transition: border-color 0.3s, color 0.3s;
-  /* Transiciones suaves */
 }
 
-/* Placeholder para los campos de entrada */
 .form-contact-f input.form-control::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  /* Placeholder blanco translúcido */
   font-style: italic;
-  /* Estilo cursivo */
 }
 
-/* Efectos de foco en los campos */
 .form-contact-f input.form-control:focus {
   box-shadow: none;
-  /* Elimina el contorno azul predeterminado */
   border-bottom: 1px solid
-    /* Cambia a borde amarillo al enfocar */
 }
 
-/* Campo de texto: Mensaje */
 .form-contact-f textarea.form-control {
   background-color: transparent;
-  /* Fondo transparente */
   border: 1px solid white;
-  /* Bordes blancos */
   color: white;
-  /* Texto blanco */
   border-radius: 5px;
-  /* Esquinas ligeramente redondeadas */
   padding: 10px;
-  /* Espaciado interno */
   transition: border-color 0.3s, color 0.3s;
-  /* Transiciones suaves */
 }
 
-/* Placeholder para el campo de texto */
 .form-contact-f textarea.form-control::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  /* Placeholder blanco translúcido */
   font-style: italic;
-  /* Estilo cursivo */
 }
 
-/* Efectos de foco en el campo de texto */
 .form-contact-f textarea.form-control:focus {
   box-shadow: none;
-  /* Elimina el contorno azul predeterminado */
-
 }
 
-/* Botón */
 .form-contact-f button.btn {
   font-family: "Space Grotesk", serif;
   background-color: transparent;
-  /* Fondo transparente */
   color: white;
-  /* Texto blanco */
   border: 1px solid white;
-  /* Bordes blancos */
   border-radius: 30px;
-  /* Esquinas redondeadas */
   padding: 5px 15px;
-  /* Espaciado interno */
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  /* Transiciones suaves */
 }
 
-/* Hover en el botón */
 .form-contact-f button.btn:hover {
   color: var(--Yellow);
-  /* Texto amarillo */
   border-color: var(--Yellow);
-  /* Bordes amarillos */
   background-color: transparent;
 }
 
 /*Footer Section*/
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.875rem;
+}
+
+.footer-container p {
+  font-size: var(--small-font-size);
+}
+
+.devs-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.375rem;
+}
 
 
 /*Media Query Mobile Design*/
