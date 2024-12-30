@@ -35,9 +35,13 @@ body {
   background-color: black;
 }
 
+/*Header*/
 /*Nav*/
+.nav-container {
+  display: block;
+}
 
-.nav-container-hamburguer {
+.nav-container-mobile {
   display: none;
 }
 
@@ -91,8 +95,6 @@ body {
   font-weight: var(--medium-weight);
 }
 
-/*Header*/
-
 header {
   display: flex;
   flex-direction: column;
@@ -124,48 +126,17 @@ header {
   padding-top: 5.9375rem;
 }
 
+.scroll-container p {
+  font-size: var(--large-font-size);
+  letter-spacing: -26.4px;
+}
+
 .scroll-container {
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   width: 100%;
-  max-width: 70%;
-  margin-top: 5rem;
-}
-
-.scroll-container img {
-  width: 100%;
-}
-
-.scroll-container {
-  position: relative;
-  display: inline-block;
-}
-
-.scroll-word,
-.scroll-word-hidden {
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-.scroll-word {
-  opacity: 1;
-}
-
-.scroll-word-hidden {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.scroll-container:hover .scroll-word {
-  opacity: 0;
-}
-
-.scroll-container:hover .scroll-word-hidden {
-  opacity: 1;
 }
 
 .custom-line {
@@ -575,22 +546,27 @@ main {
   gap: 2.375rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 880px) {
+  .scroll-container p {
+    font-size: 12rem;
+    letter-spacing: -8.8px;
+  }
+}
+
+@media screen and (max-width: 640px) {
 
   /*Header*/
 
   /*Nav*/
   .nav-container {
-    display: none
+    display: none;
   }
 
-  .nav-container-hamburguer {
+  .nav-container-mobile {
     display: block;
   }
 
-
-
-  .nav-container-hamburguer a {
+  .nav-container-mobile a {
     font-family: "Space Grotesk", serif;
     color: white;
     font-size: var(--small-font-size);
@@ -598,25 +574,36 @@ main {
     margin-right: 1rem;
   }
 
+  .nav-container-mobile a:hover {
+    color: var(--Yellow);
+    text-decoration: underline;
+    font-weight: var(--medium-weight);
+  }
+
   .bio-container {
     padding: 0;
     padding-top: 6rem;
   }
 
-  .scroll-container {
-    max-width: 100%;
+  .scroll-container p {
+    font-size: 6.875rem;
+    letter-spacing: -8.8px;
   }
+
+  .scroll-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 70%;
+  }
+
 
   /*Main*/
 
   /*Separatores*/
 
-  .section-separator {
-    padding-top: 5.56rem;
-  }
-
   /*Audiovisual Projects Section*/
-
   .txt-img-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -632,7 +619,6 @@ main {
     grid-column: 1;
     grid-row: 2 / 3;
     margin-bottom: 0;
-
   }
 
   .img-content-2 {
