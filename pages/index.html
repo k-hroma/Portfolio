@@ -23,23 +23,61 @@
     <div class="img-container">
       <img class="header-gif" src="../assets/video/header_gif.gif" alt="header_gif">
     </div>
-    <div class="nav-container-sup">
-      <nav class="nav-sup">
-        <div class="not-menu">
-          <ul class="not-arrow">
-            <li><a class="kroma" href="#">K-hroma</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <ul class="arrow">
-            <li><a href="#Audiovisual-work">Audiovisual Projects</a></li>
-            <li><a href="#Programming-work">Programming</a></li>
-            <li><a href="#Experimental-work">Experimental</a></li>
-            <li><a href="#About">About</a></li>
-          </ul>
+    <nav class="nav-container">
+      <!-- Top Left Navigation -->
+      <div class="top-left">
+        <a href="#" class="">K-hroma</a>
+      </div>
+
+      <!-- Top Right Navigation -->
+      <div class="top-right">
+        <nav>
+          <a href="#Audiovisual-work" class="">*Audiovisual Projects</a>
+          <a href="#Programming-work" class="">*Programming</a>
+          <a href="#Experimental-work" class="">*Experimental</a>
+          <a href="#About" class="nav-mod">*About</a>
+        </nav>
+      </div>
+
+      <!-- Bottom Left Navigation -->
+      <div class="bottom-left">
+        <a href="#Contact" class="">*Contact</a>
+      </div>
+
+      <!-- Bottom Right Navigation -->
+      <div class="bottom-right">
+        <a href="https://www.instagram.com/rocxx._/" class="" target="_blank">*IG</a>
+        <a href="https://github.com/k-hroma" class="" target="_blank">*GitHub</a>
+      </div>
+    </nav>
+    <nav class="nav-container-hamburguer">
+      <!-- Navbar de Bootstrap -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">K-hroma</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#Audiovisual-work">*Audiovisual Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Programming-work">*Programming</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Experimental-work">*Experimental</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">*About</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-    </div>
+    </nav>
     <div class="header-txt">
       <div class="bio-container">
         <p>Hi! I’m Rocio Mendonça Gainza aka “K-hroma”.</p>
@@ -50,24 +88,9 @@
         <p>Please check out my work as you scroll down ↓  </p>
       </div>
       <div class="scroll-container">
-        <p class="scroll-word">*scroll</p>
-        <p class="scroll-word-hidden">*hola!</p>
+        <img class="scroll-word" src="../assets/img/header/_scroll.svg" alt="scroll"></img>
+        <img class="scroll-word-hidden" src="../assets/img/header/_hola!.svg" alt="hola!"></img>
       </div>
-    </div>
-    <div class="nav-container-inf">
-      <nav class="nav-inf">
-        <div class="not-menu">
-          <ul class="arrow">
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <ul class="arrow">
-            <li><a href="https://www.instagram.com/rocxx._/" target="_blank">IG</a></li>
-            <li><a href="https://github.com/k-hroma" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </nav>
     </div>
   </header>
   <main>
@@ -379,6 +402,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
