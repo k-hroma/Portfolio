@@ -23,6 +23,7 @@
     <div class="img-container">
       <img class="header-gif" src="../assets/video/header_gif.gif" alt="header_gif">
     </div>
+    <!--Navbar-->
     <nav class="nav-container">
       <!-- Top Left Navigation -->
       <div class="top-left">
@@ -51,21 +52,47 @@
       </div>
     </nav>
     <nav class="nav-container-mobile">
-      <!-- Top Left Navigation -->
-      <div class="top-left">
-        <a href="#" class="">K-hroma</a>
-      </div>
-
-      <!-- Top Right Navigation -->
-      <div class="top-right">
-        <nav>
-          <a href="#Audiovisual-work" class="">Av.pts</a>
-          <a href="#Programming-work" class="">Prog.</a>
-          <a href="#Experimental-work" class="">Exp.</a>
-
-        </nav>
-      </div>
-
+      <nav class="navbar bg-body-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <strong>K-hroma</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="offcanvas-title" href="#" id="offcanvasNavbarLabel">K-hroma</a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Audiovisual-work" class="">*Audiovisual Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Programming-work" class="">*Programming</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Experimental-work">*Experimental</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#About">*About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact">*Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/rocxx._/" target="_blank">*IG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/k-hroma" target="_blank">*GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       <!-- Bottom Left Navigation -->
       <div class="bottom-left">
         <a href="#Contact" class="">Contact</a>
@@ -76,14 +103,16 @@
           <a href="https://github.com/k-hroma" class="" target="_blank">GitHub</a>
         </div>
     </nav>
+
     <div class="header-txt">
       <div class="bio-container">
-        <p>Hi! I’m Rocio Mendonça Gainza aka “K-hroma”.</p>
-        <p>I’m a developer since January of 2024. I also have a background in audiovisual and sound art, photography
-          and
-          social communication. My main focus at this moment is learning as much as I can on coding and programming.
+        <p>Hi! I’m Rocio Mendonça aka “K-hroma”.</p>
+        <p>I am a developer based in Buenos Aires, Argentina, with a rich background in audiovisual and sound art,
+          photography,
+          and social communication. Currently, I’m focused on expanding my knowledge and skills in programming languages
+          and Full-Stack Development.
         </p>
-        <p>Please check out my work as you scroll down ↓  </p>
+        <p>Feel free to explore my work as you scroll down ↓  </p>
       </div>
       <div class="scroll-container">
         <p class="scroll-word">*scroll</p>
@@ -165,11 +194,11 @@
               repellendus facilis.</p>
             <p>HTML | CSS</p>
           </div>
-          <div class="btn-container">
-            <button><a href="https://github.com/k-hroma/TestimonialsGridSection" target="_blank">View
-                GitHub</a></button>
-            <button><a href="https://k-hroma.github.io/TestimonialsGridSection/" target="_blank">Preview
-                Site</a></button>
+          <div class="link-container">
+            <a href="https://github.com/k-hroma/TestimonialsGridSection" target="_blank">View
+              GitHub</a>
+            <a href="https://k-hroma.github.io/TestimonialsGridSection/" target="_blank">Preview
+              Site</a>
           </div>
         </div>
         <div class="work-2">
@@ -183,10 +212,10 @@
               repellendus facilis.</p>
             <p>HTML | CSS</p>
           </div>
-          <div class="btn-container">
-            <button><a href="https://github.com/k-hroma/FourCardFeatureSection" target="_blank">View GitHub</a></button>
-            <button><a href="https://k-hroma.github.io/FourCardFeatureSection/" target="_blank">Preview
-                Site</a></button>
+          <div class="link-container">
+            <a href="https://github.com/k-hroma/FourCardFeatureSection" target="_blank">View GitHub</a>
+            <a href="https://k-hroma.github.io/FourCardFeatureSection/" target="_blank">Preview
+              Site</a>
           </div>
         </div>
         <div class="work-3">
@@ -200,10 +229,10 @@
               repellendus facilis.</p>
             <p>HTML | CSS</p>
           </div>
-          <div class="btn-container">
-            <button><a href="https://github.com/k-hroma/ProductCardComponent" target="_blank">View GitHub</a></button>
-            <button><a href="https://k-hroma.github.io/ProductCardComponent/" target="_blank">Preview
-                Site</a></button>
+          <div class="link-container">
+            <a href="https://github.com/k-hroma/ProductCardComponent" target="_blank">View GitHub</a>
+            <a href="https://k-hroma.github.io/ProductCardComponent/" target="_blank">Preview
+              Site</a>
           </div>
         </div>
         <div class="work-4">
@@ -217,13 +246,12 @@
               repellendus facilis.</p>
             <p>HTML | CSS</p>
           </div>
-          <div class="btn-container">
-            <button><a href="https://github.com/k-hroma/Social-Link-Profile" target="_blank">View GitHub</a></button>
-            <button><a href="https://k-hroma.github.io/Social-Link-Profile/" target="_blank">Preview
-                Site</a></button>
+          <div class="link-container">
+            <a href="https://github.com/k-hroma/Social-Link-Profile" target="_blank">View GitHub</a>
+            <a href="https://k-hroma.github.io/Social-Link-Profile/" target="_blank">Preview
+              Site</a>
           </div>
         </div>
-      </div>
       </div>
     </section>
     <div class="section-separator-experimental">
@@ -294,38 +322,89 @@
           </div>
         </div>
         <div class="tools-content">
-          <h3>Tools & Technologies</h3>
+          <h3>Programming Languages</h3>
           <ul>
-            <li>Programming Languages: Python, CSS, HTML</li>
-            <li>Creative Software: Adobe Creative Suite (Photoshop, Lightroom, Premiere, Audition)</li>
-            <li>Development Tools: TouchDesigner, Resolume Arena</li>
-          </ul>
-        </div>
-        <div class="certificates-content">
-          <h3>Certificates</h3>
-          <ul>
-            <li>Fotografía</li>
+            <li>JavaScript</li>
             <li>Python</li>
-            <li>Etc.</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <h3>Frameworks and Libraries</h3>
+          <ul>
+            <li>Tkinter</li>
+            <li>Bootstrap</li>
+          </ul>
+          <h3>Databases</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+          </ul>
+          <h3>Multimedia Software</h3>
+          <ul>
+            <li>TouchDesigner</li>
+            <li>Resolume Arena</li>
+          </ul>
+          <h3>Creative Software</h3>
+          <ul>
+            <li>Adobe Premiere</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Lightroom</li>
+            <li>Adobe Audition</li>
+            <li>Reaper Digital Audio Workstation</li>
           </ul>
         </div>
         <div class="workshops-content">
-          <h3>Workshops</h3>
+          <h3>Advanced Diploma</h3>
           <ul>
-            <li>Taller Experimental de Fotografía</li>
-            <p>UTN BA // 2024</p>
-            <li>Taller Experimental</li>
-            <p>UTN BA // 2024</p>
-            <li>Taller Experimental</li>
-            <p>UTN BA // 2024</p>
-            <li>Taller Experimental</li>
-            <p>UTN BA // 2024</p>
-            <li>Taller Experimental</li>
-            <p>UTN BA // 2024</p>
-            <li>Taller Experimental</li>
-            <p>UTN BA // 2024</p>
-            <li>Taller Experimental</li>
-            <p>UTN BA // 2024</p>
+            <div class="diplo-container">
+              <li>
+                Diploma in Full Stack Web Programming</li>
+              <p>UTN BA // November 2024 to July 2025.</p>
+            </div>
+            <div class="diplo-container">
+              <li>Diploma in Python</li>
+              <p>UTN BA // April 2024 to November 2024</p>
+            </div>
+            <div class="diplo-container">
+              <li>Diploma in Python</li>
+              <p>Udemy // January 2025 to November 2025</p>
+            </div>
+            <div class="diplo-container">
+              <li>Diploma in JavaScript</li>
+              <p>Udemy // January 2025 to November 2025</p>
+            </div>
+          </ul>
+          <h3>Audiovisual Arts Studies</h3>
+          <ul>
+            <div class="diplo-container">
+              <li>Visual Programming in Touchdesigner.</li>
+              <p>WIP Arte Digital // February 2024 to April 2024 </p>
+            </div>
+            <div class="diplo-container">
+              <li>Video Mapping - Resolume Arena</li>
+              <p>VideoPoesia // October 2022 to Dicember 2022</p>
+            </div>
+            <div class="diplo-container">
+              <li>Bachelor's Degree in Audiovisual Arts</li>
+              <p>UNA // 2019-2023</p>
+            </div>
+          </ul>
+          <h3>Photography Workshops</h3>
+          <ul>
+            <div class="diplo-container">
+              <p>Espacio Rara // 2022-2023 </p>
+              <p>Santa Talleres // 2020-2021</p>
+              <p>Cooperativa de la imagen // 2018-2021</p>
+              <p>National School of Photography // 2018-2020</p>
+            </div>
           </ul>
         </div>
       </div>
@@ -399,6 +478,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>

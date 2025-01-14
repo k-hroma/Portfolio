@@ -1,5 +1,6 @@
 :root {
   /*Fonts Sizes*/
+  --very-small-font-size: .75rem;
   --small-font-size: 1rem;
   --medium-font-size: 1.25rem;
   --mlarge-font-size: 3rem;
@@ -312,32 +313,24 @@ main {
   padding-right: 3rem;
 }
 
-.btn-container button {
+.link-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-container a {
+  text-decoration: none;
   padding: 0.375rem 0.75rem;
   background-color: transparent;
-  border-color: white;
+  border-style: solid;
+  border-color: hsl(0, 0%, 100%);
   color: white;
   border-radius: 30px;
-  margin-right: 1rem;
 }
 
-.btn-container button:hover {
+.link-container a:hover {
   color: var(--Yellow);
   border-color: var(--Yellow);
-}
-
-.btn-container button a {
-  color: white;
-  text-decoration: none;
-}
-
-.btn-container button:hover {
-  color: var(--Yellow);
-  border-color: var(--Yellow);
-}
-
-.btn-container button a:hover {
-  color: var(--Yellow);
 }
 
 /*Experimental Section*/
@@ -361,6 +354,11 @@ main {
 .grid-content ul {
   list-style: none;
   padding: 0;
+
+}
+
+.grid-content ul li {
+  margin: 0;
 }
 
 .bio-content {
@@ -413,12 +411,6 @@ main {
   color: var(--Yellow)
 }
 
-.certificates-content {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-
-}
-
 .tools-content {
   grid-column: 3 / 4;
 }
@@ -430,15 +422,38 @@ main {
 }
 
 .about-container h3 {
-  font-size: var(--medium-font-size);
-  margin-bottom: 1.5rem;
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
   text-decoration: underline;
 }
 
 .about-container li {
   font-size: var(--small-font-size);
   margin-bottom: 1.5rem;
+}
 
+.about-container a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--very-small-font-size);
+}
+
+.workshops-content p {
+  margin: 0;
+  margin-top: .25rem;
+  font-size: var(--very-small-font-size);
+}
+
+.workshops-content ul {
+  margin-bottom: 2rem;
+}
+
+.workshops-content ul li {
+  margin-top: .5rem;
+}
+
+.diplo-container {
+  margin-bottom: 1rem;
 }
 
 /*Contact Section*/
@@ -538,6 +553,7 @@ main {
 
 .footer-container p {
   font-size: var(--small-font-size);
+  opacity: 50%;
 }
 
 .devs-container {
@@ -548,9 +564,35 @@ main {
 
 @media screen and (max-width: 880px) {
   .scroll-container p {
-    font-size: 12rem;
-    letter-spacing: -8.8px;
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.25));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.25));
   }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .devs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer-container p {
+    margin-bottom: .5rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-container p {
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.35));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.35));
+  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -564,30 +606,85 @@ main {
 
   .nav-container-mobile {
     display: block;
+
+  }
+
+  .navbar {
+    padding: 1.2rem 1.875rem;
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+    transition: none;
+    padding-right: 0;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
   .nav-container-mobile a {
-    font-family: "Space Grotesk", serif;
-    color: white;
-    font-size: var(--small-font-size);
-    text-decoration: none;
-    margin-right: 1rem;
+    font-family: "Space Grotesk", serif !important;
+    color: white !important;
+    font-size: var(--small-font-size) !important;
+    text-decoration: none !important;
+    margin-right: 1rem !important;
   }
 
   .nav-container-mobile a:hover {
-    color: var(--Yellow);
-    text-decoration: underline;
-    font-weight: var(--medium-weight);
+    color: var(--Yellow) !important;
+    text-decoration: underline !important;
+    font-weight: var(--medium-weight) !important;
   }
 
+  .offcanvas-header {
+    background-color: black;
+    padding: 1.5rem 1.875rem;
+  }
+
+  .offcanvas-header .btn-close {
+    padding: 0;
+    padding: 1.5rem 1.875rem;
+    filter: invert(1);
+  }
+
+  .offcanvas-body {
+    background-color: black;
+    padding: 0 1.875rem;
+  }
+
+  .offcanvas-body ul {
+    padding: 0;
+  }
+
+  .offcanvas-end {
+    width: 80% !important;
+  }
+
+
+  /**/
   .bio-container {
     padding: 0;
     padding-top: 6rem;
   }
 
   .scroll-container p {
-    font-size: 6.875rem;
-    letter-spacing: -8.8px;
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.45));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.45));
   }
 
   .scroll-container {
@@ -595,13 +692,10 @@ main {
     flex-direction: column;
     margin-top: 2rem;
     width: 100%;
-    max-width: 70%;
   }
 
 
   /*Main*/
-
-  /*Separatores*/
 
   /*Audiovisual Projects Section*/
   .txt-img-content {
@@ -689,25 +783,35 @@ main {
     max-width: 516px;
   }
 
-  /*Footer Section*/
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1.875rem;
+  @media screen and (max-width: 540px) {
+    .scroll-container p {
+      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.50));
+      letter-spacing: calc(-26.4px - (-26.4px * 0.50));
+    }
   }
 
-  .devs-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
+  @media screen and (max-width: 480px) {
+
+    .scroll-container p {
+      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.55));
+      letter-spacing: calc(-26.4px - (-26.4px * 0.55));
+    }
   }
 
-  .footer-container p {
-    opacity: 50%;
-    margin: 1px;
+  @media screen and (max-width: 438px) {
+
+    .scroll-container p {
+      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.60));
+      letter-spacing: calc(-26.4px - (-26.4px * 0.60));
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .scroll-container p {
+      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.65));
+      letter-spacing: calc(-26.4px - (-26.4px * 0.65));
+    }
+
   }
 }
