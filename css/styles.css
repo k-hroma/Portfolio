@@ -562,8 +562,25 @@ main {
   gap: 2.375rem;
 }
 
+@media screen and (max-width: 1033px) {
+  .bio-container {
+    padding-left: 48%;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .bio-container {
+    padding-left: 40%;
+  }
+}
+
 @media screen and (max-width: 880px) {
+  .bio-container {
+    padding-left: 35%;
+  }
+
   .scroll-container p {
+    padding-top: 6rem;
     font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.25));
     letter-spacing: calc(-26.4px - (-26.4px * 0.25));
   }
@@ -587,12 +604,34 @@ main {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 809px) {
   .scroll-container p {
     font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.35));
     letter-spacing: calc(-26.4px - (-26.4px * 0.35));
   }
 
+  .bio-container {
+    padding-left: 30%;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  .bio-container {
+    padding-left: 28%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .bio-container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .bio-container {
+    padding-left: 15%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -678,8 +717,8 @@ main {
 
   /**/
   .bio-container {
-    padding: 0;
     padding-top: 6rem;
+    padding-left: 10%;
   }
 
   .scroll-container p {
@@ -782,27 +821,39 @@ main {
     width: 100%;
     max-width: 516px;
   }
+}
 
-  @media screen and (max-width: 540px) {
-    .scroll-container p {
-      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.50));
-      letter-spacing: calc(-26.4px - (-26.4px * 0.50));
-    }
+@media screen and (max-width: 601px) {
+  .bio-container {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .scroll-container p {
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.50));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.50));
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .scroll-container p {
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.55));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.55));
+  }
+}
+
+@media screen and (max-width: 438px) {
+
+  .scroll-container p {
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.60));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.60));
   }
 
-  @media screen and (max-width: 480px) {
-
-    .scroll-container p {
-      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.55));
-      letter-spacing: calc(-26.4px - (-26.4px * 0.55));
-    }
-  }
-
-  @media screen and (max-width: 438px) {
-
-    .scroll-container p {
-      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.60));
-      letter-spacing: calc(-26.4px - (-26.4px * 0.60));
+  @media screen and (max-width: 425px) {
+    .aka-khroma {
+      padding-right: 20%;
     }
   }
 
@@ -813,5 +864,11 @@ main {
       letter-spacing: calc(-26.4px - (-26.4px * 0.65));
     }
 
+  }
+
+  @media screen and (max-width: 385px) {
+    .aka-khroma {
+      padding-right: 15%;
+    }
   }
 }
