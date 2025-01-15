@@ -829,6 +829,12 @@ main {
   }
 }
 
+@media screen and (max-width: 546px) {
+  .scroll-down {
+    padding-right: 10%;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .scroll-container p {
     font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.50));
