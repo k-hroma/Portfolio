@@ -661,6 +661,8 @@ main {
   }
 
   .navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
     border: none !important;
     transition: none !important;
     padding-right: 0 !important;
@@ -697,7 +699,7 @@ main {
 
   .offcanvas-header .btn-close {
     padding: 0 !important;
-    padding: 1.5rem 1.875rem !important;
+    padding: .8rem 1rem !important;
     filter: invert(1) !important;
   }
 
@@ -707,11 +709,12 @@ main {
   }
 
   .offcanvas-body ul {
-    padding: 0 !important;
+    padding: 1.8rem 0 !important;
   }
 
   .offcanvas-end {
-    width: 80% !important;
+    width: 100% !important;
+
   }
 
 
