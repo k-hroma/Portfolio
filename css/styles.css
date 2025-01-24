@@ -880,4 +880,11 @@ main {
       padding-right: 15%;
     }
   }
+
+  @media screen and (max-width: 326px){
+    .scroll-container {
+      width: 100%;
+    }
+  }
+
 }
