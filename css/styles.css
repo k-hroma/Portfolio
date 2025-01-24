@@ -886,5 +886,9 @@ main {
       width: 100%;
     }
   }
+  .scroll-container p {
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.75));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.75));
+  }
 
 }
