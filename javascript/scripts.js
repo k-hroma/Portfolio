@@ -1,5 +1,5 @@
 function changeText() {
-  document.getElementById("scroll-change").innerHTML = "*down";
+  document.getElementById("scroll-change").innerHTML = "*⎚-⎚";
 }
 
 function changeTextS() {
