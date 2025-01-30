@@ -140,6 +140,10 @@ header {
   width: 100%;
 }
 
+.scroll-word-mobile {
+  display:none;
+}
+
 .custom-line {
   width: 100%;
 }
@@ -736,6 +740,15 @@ main {
     width: 100%;
   }
 
+  .scroll-word {
+    display: none;
+  }
+  
+  .scroll-word-mobile {
+    display: block;
+  }
+
+  
 
   /*Main*/
 
