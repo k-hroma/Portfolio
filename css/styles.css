@@ -562,6 +562,8 @@ main {
   gap: 2.375rem;
 }
 
+
+/* media query css */
 @media screen and (max-width: 1033px) {
   .bio-container {
     padding-left: 48%;
@@ -717,8 +719,6 @@ main {
 
   }
 
-
-  /**/
   .bio-container {
     padding-top: 6rem;
     padding-left: 10%;
@@ -859,36 +859,37 @@ main {
     font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.60));
     letter-spacing: calc(-26.4px - (-26.4px * 0.60));
   }
+}
 
-  @media screen and (max-width: 425px) {
-    .aka-khroma {
-      padding-right: 20%;
-    }
+@media screen and (max-width: 425px) {
+  .aka-khroma {
+    padding-right: 20%;
   }
+}
 
-  @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
-    .scroll-container p {
-      font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.65));
-      letter-spacing: calc(-26.4px - (-26.4px * 0.65));
-    }
-
-  }
-
-  @media screen and (max-width: 385px) {
-    .aka-khroma {
-      padding-right: 15%;
-    }
-  }
-
-  @media screen and (max-width: 326px){
-    .scroll-container {
-      width: 100%;
-    }
-  }
   .scroll-container p {
-    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.75));
-    letter-spacing: calc(-26.4px - (-26.4px * 0.75));
+    font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.65));
+    letter-spacing: calc(-26.4px - (-26.4px * 0.65));
   }
+
+}
+
+@media screen and (max-width: 385px) {
+  .aka-khroma {
+    padding-right: 15%;
+  }
+}
+
+@media screen and (max-width: 326px){
+  .scroll-container {
+    width: 100%;
+  }
+
+.scroll-container p {
+  font-size: calc(var(--large-font-size) - (var(--large-font-size) * 0.75));
+  letter-spacing: calc(-26.4px - (-26.4px * 0.75));
+}
 
 }
