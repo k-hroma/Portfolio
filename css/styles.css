@@ -140,10 +140,6 @@ header {
   width: 100%;
 }
 
-.scroll-word-mobile {
-  display:none;
-}
-
 .custom-line {
   width: 100%;
 }
@@ -226,9 +222,9 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.video-content video {
+/* .video-content video {
   width: 100%;
-}
+} */
 
 .txt-img-content {
   display: grid;
@@ -740,15 +736,6 @@ main {
     width: 100%;
   }
 
-  .scroll-word {
-    display: none;
-  }
-  
-  .scroll-word-mobile {
-    display: block;
-  }
-
-  
 
   /*Main*/
 
